@@ -7,7 +7,6 @@ const cookieParser = require("cookie-parser");
 const http = require("http");
 const bodyParser = require("body-parser");
 const studentRoute = require("./router/Student.js");
-// const 
 const applicationRunning = require("./router/api.js");
 const feedbackRouter = require("./router/Feedbacks.js");
 
