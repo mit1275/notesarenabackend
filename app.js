@@ -213,18 +213,8 @@ app.use("/api/student", studentRoute);
 
 app.use("/api/feedback", feedbackRouter);
 
-__dirname=path.resolve();
-if(process.env.NODE_ENV=="production")
-{
-  app.use(express.static("Frontend/build"));
 
-  app.get("*",(req,res)=>{
-    res.send(path.resolve(__dirname,"Frontend","build","index.html"));
-  })
-}
-// else{
 
-// }
 
 //STARTING APP
 app.listen(process.env.PORT || 3001, () => {
